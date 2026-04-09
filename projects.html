@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Om Roy</title>
+    <meta name="description" content="Projects by Om Roy — AI coding assistants, real-time platforms, and cross-platform apps.">
+    <meta name="author" content="Om Roy">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23111'/%3E%3Ctext x='50' y='70' font-family='monospace' font-size='42' font-weight='bold' fill='%23f2ede8' text-anchor='middle'%3EOR%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro:wght@400;600&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="index.html" class="nav-brand">Om Roy</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="publications.html">Publications</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="nav-overlay">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="publications.html">Publications</a>
+    </div>
+
+    <main>
+
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Projects<span class="accent">.</span></h1>
+                <p class="page-subtitle">Things I've built and shipped.</p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section">
+            <div class="container">
+                <div class="projects-grid">
+
+                    <!-- Project 01: Coding Agent -->
+                    <article class="project-card reveal">
+                        <div class="project-header">
+                            <span class="project-number">01</span>
+                            <span class="project-year">2025</span>
+                        </div>
+                        <h2 class="project-name">Coding Agent</h2>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Built a full-stack AI coding assistant supporting 4 LLM providers (Anthropic, OpenAI, Google, Copilot) with real-time SSE streaming, sandboxed tool execution, and session rewind via file snapshots</li>
+                                <li>Designed a memory system with LLM-powered fact extraction, 3-strategy hybrid retrieval (semantic + keyword + recency), temporal decay, conflict detection, and token budget management</li>
+                                <li>Engineered a modular framework supporting 9+ tools (bash, file CRUD, glob, grep, web search) with 2-tier permissions, real-time SSE streaming, and automatic safe/dangerous classification</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span class="tag">React 19</span>
+                                <span class="tag">Hono</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">SSE</span>
+                                <span class="tag">LLM APIs</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 02: InviteX -->
+                    <article class="project-card reveal" data-delay="1">
+                        <div class="project-header">
+                            <span class="project-number">02</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h2 class="project-name">InviteX</h2>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Launched a real-time event invitation platform enabling group creation, custom image invites, and SMS notifications &mdash; leveraging Supabase PostgreSQL logical replication for live updates without polling</li>
+                                <li>Constructed 30+ type-safe tRPC procedures with Zod validation, integrating Clerk auth, Supabase file storage (base64-to-blob), and batch SMS delivery</li>
+                                <li>Implemented a 5-view responsive dashboard with NextUI, Tailwind CSS, and Framer Motion &mdash; featuring tabbed invites, real-time sync via React Query, and owner-based access control</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">tRPC</span>
+                                <span class="tag">Prisma</span>
+                                <span class="tag">Supabase</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 03: Water Reminder -->
+                    <article class="project-card reveal" data-delay="2">
+                        <div class="project-header">
+                            <span class="project-number">03</span>
+                            <span class="project-year">2024</span>
+                        </div>
+                        <h2 class="project-name">Water Reminder</h2>
+                        <div class="project-desc">
+                            <ul>
+                                <li>Crafted a cross-platform hydration reminder app for 2 Apple platforms (iOS + macOS) with a native menu bar tray icon</li>
+                                <li>Implemented 8+ customizable notification intervals and daily intake tracking with local persistence using UserDefaults</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <div class="project-tags">
+                                <span class="tag">Swift</span>
+                                <span class="tag">macOS</span>
+                                <span class="tag">iOS</span>
+                            </div>
+                            <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-text">
+                built with caffeine &amp; curiosity <span class="accent">//</span> &copy; 2026 Om Roy
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="experience.html">Experience</a>
+                <a href="publications.html">Publications</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
