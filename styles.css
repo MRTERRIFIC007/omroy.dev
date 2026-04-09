@@ -18,7 +18,7 @@
     --font-display: 'Unbounded', sans-serif;
     --font-body: 'Libre Baskerville', serif;
     --font-mono: 'Source Code Pro', monospace;
-    --container: 1100px;
+    --container: 1280px;
     --gutter: clamp(1.5rem, 4vw, 3rem);
 }
 
@@ -230,10 +230,11 @@ ul, ol {
 .hero-name {
     font-family: var(--font-display);
     font-weight: 900;
-    font-size: clamp(4.5rem, 16vw, 12rem);
+    font-size: clamp(4rem, 22vw, 17rem);
     line-height: 0.88;
     text-transform: uppercase;
     letter-spacing: -0.05em;
+    white-space: nowrap;
     animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -292,10 +293,11 @@ ul, ol {
 .page-title {
     font-family: var(--font-display);
     font-weight: 900;
-    font-size: clamp(3.5rem, 12vw, 9rem);
+    font-size: clamp(2.8rem, 11vw, 8.5rem);
     text-transform: uppercase;
     letter-spacing: -0.05em;
     line-height: 0.92;
+    white-space: nowrap;
     animation: fadeInUp 0.8s ease forwards;
 }
 
@@ -627,6 +629,12 @@ ul, ol {
     color: var(--bg);
 }
 
+.project-links {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
 /* ═══════════════════════════════════════
    EXPERIENCE BLOCKS
    ═══════════════════════════════════════ */
@@ -713,6 +721,17 @@ ul, ol {
 
 .exp-body li:last-child {
     border-bottom: none;
+}
+
+.inline-link {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+    font-weight: 600;
+    transition: opacity 0.15s;
+}
+
+.inline-link:hover {
+    opacity: 0.7;
 }
 
 /* Current job badge */
@@ -950,7 +969,7 @@ ul, ol {
     }
 
     .hero-name {
-        font-size: clamp(3.5rem, 20vw, 8rem);
+        font-size: clamp(3.5rem, 18vw, 8rem);
     }
 
     .contact-grid {
@@ -995,11 +1014,11 @@ ul, ol {
 
 @media (max-width: 480px) {
     .hero-name {
-        font-size: clamp(3rem, 22vw, 6rem);
+        font-size: clamp(2.8rem, 20vw, 6rem);
     }
 
     .page-title {
-        font-size: clamp(2.8rem, 16vw, 5rem);
+        font-size: clamp(2rem, 11vw, 4.5rem);
     }
 
     .project-number,
